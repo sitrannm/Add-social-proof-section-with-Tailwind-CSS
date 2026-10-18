@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive social proof section built with Tailwind CSS.">
+  <title>Social Proof Section | Frontend Mentor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-plum: hsl(300, 43%, 22%);
+      --color-blush: hsl(333, 80%, 67%);
+      --color-mauve: hsl(303, 10%, 53%);
+      --color-haze: hsl(300, 24%, 96%);
+      --font-spartan: "League Spartan", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white font-spartan text-base font-medium text-mauve">
+
+  <main class="mx-auto max-w-277.5 px-6 py-16 lg:py-24">
+
+    <!-- Intro + ratings -->
+    <header class="grid gap-10 lg:grid-cols-2 lg:items-center">
+
+      <div class="text-center lg:text-left">
+        <h1 class="mx-auto max-w-80 text-[32px] leading-9 font-bold text-plum lg:mx-0 lg:max-w-sm lg:text-[44px] lg:leading-[1.1]">
+          10,000+ of our users love our products.
+        </h1>
+        <p class="mt-4 lg:max-w-102">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </div>
+
+      <ul class="flex flex-col gap-4">
+        <li class="flex items-center justify-center gap-3 rounded-lg bg-haze px-6 py-3 lg:w-111 lg:justify-start">
+          <span class="text-orange-400" role="img" aria-label="5 stars">★★★★★</span>
+          <span class="font-bold text-plum">Rated 5 Stars in Reviews</span>
+        </li>
+        <li class="flex items-center justify-center gap-3 rounded-lg bg-haze px-6 py-3 lg:ml-7 lg:w-111 lg:justify-start">
+          <span class="text-orange-400" role="img" aria-label="5 stars">★★★★★</span>
+          <span class="font-bold text-plum">Rated 5 Stars in Report Guru</span>
+        </li>
+        <li class="flex items-center justify-center gap-3 rounded-lg bg-haze px-6 py-3 lg:ml-14 lg:w-111 lg:justify-start">
+          <span class="text-orange-400" role="img" aria-label="5 stars">★★★★★</span>
+          <span class="font-bold text-plum">Rated 5 Stars in BestTech</span>
+        </li>
+      </ul>
+
+    </header>
+
+    <!-- Reviews -->
+    <section class="mt-16 grid gap-6 lg:mt-20 lg:grid-cols-3 lg:items-start lg:gap-8" aria-label="Customer reviews">
+
+      <figure class="rounded-lg bg-plum p-8 text-center text-white lg:text-left">
+        <div class="flex flex-col items-center gap-3 lg:flex-row lg:gap-4">
+          <img class="size-10 rounded-full border-2 border-blush" src="./images/image-colton.jpg" alt="">
+          <figcaption>
+            <p class="font-bold">Colton Smith</p>
+            <p class="text-blush">Verified Buyer</p>
+          </figcaption>
+        </div>
+        <blockquote class="mt-6">
+          <p class="leading-relaxed">
+            “We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but they also managed to produce
+            it in time. Excellent!”
+          </p>
+        </blockquote>
+      </figure>
+
+      <figure class="rounded-lg bg-plum p-8 text-center text-white lg:mt-4 lg:text-left">
+        <div class="flex flex-col items-center gap-3 lg:flex-row lg:gap-4">
+          <img class="size-10 rounded-full border-2 border-blush" src="./images/image-irene.jpg" alt="">
+          <figcaption>
+            <p class="font-bold">Irene Roberts</p>
+            <p class="text-blush">Verified Buyer</p>
+          </figcaption>
+        </div>
+        <blockquote class="mt-6">
+          <p class="leading-relaxed">
+            “Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery.”
+          </p>
+        </blockquote>
+      </figure>
+
+      <figure class="rounded-lg bg-plum p-8 text-center text-white lg:mt-8 lg:text-left">
+        <div class="flex flex-col items-center gap-3 lg:flex-row lg:gap-4">
+          <img class="size-10 rounded-full border-2 border-blush" src="./images/image-anne.jpg" alt="">
+          <figcaption>
+            <p class="font-bold">Anne Wallace</p>
+            <p class="text-blush">Verified Buyer</p>
+          </figcaption>
+        </div>
+        <blockquote class="mt-6">
+          <p class="leading-relaxed">
+            “Put an order with this company and can only praise them for the very
+            high standard. Will definitely use them again and recommend them to
+            everyone!”
+          </p>
+        </blockquote>
+      </figure>
+
+    </section>
+
+  </main>
+
+  <footer class="p-4 text-center text-xs">
+    Challenge by <a class="text-plum underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+    Coded by <a class="text-plum underline" href="https://github.com/sitrannm">Sitra Seyfu Shifa</a>.
+  </footer>
+
+</body>
+</html>
